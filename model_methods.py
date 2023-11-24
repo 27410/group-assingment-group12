@@ -1,6 +1,14 @@
+import cobra.io
+from cobra.io import read_sbml_model
 from cobra import Reaction, Metabolite
 
-def model_update(model):
+def get_updated_model():
+    
+    model = read_sbml_model('iNF517.xml')
+    medium = model.medium
+    original_medium = model.medium
+    original_objective = model.objective
+    
 
     # first new reaction, completion
     # https://www.kegg.jp/entry/R08165
@@ -16,11 +24,11 @@ def model_update(model):
     new_reaction1.gene_reaction_rule = '( LLMG_1829 )'
 
     new_reaction1.add_metabolites({model.metabolites.get_by_id('akg_c'): -1,
-                                model.metabolites.get_by_id('h_c'): -1,
-                                model.metabolites.get_by_id('ichor_c'): -1,
-                                sephchc: 1,
-                                model.metabolites.get_by_id('co2_c'): 1
-                                })
+                                   model.metabolites.get_by_id('h_c'): -1,
+                                   model.metabolites.get_by_id('ichor_c'): -1,
+                                   sephchc: 1,
+                                   model.metabolites.get_by_id('co2_c'): 1
+                                  })
 
     model.add_reactions([new_reaction1])
 
@@ -37,9 +45,9 @@ def model_update(model):
     new_reaction2.gene_reaction_rule = '( LLMG_1830 )'
 
     new_reaction2.add_metabolites({model.metabolites.get_by_id('2sephchc_c'): -1,
-                                model.metabolites.get_by_id('2shchc_c'): 1,
-                                model.metabolites.get_by_id('pyr_c'): 1
-                                })
+                                   model.metabolites.get_by_id('2shchc_c'): 1,
+                                   model.metabolites.get_by_id('pyr_c'): 1
+                                  })
 
     model.add_reactions([new_reaction2])
 
@@ -57,10 +65,10 @@ def model_update(model):
     dhncoa = Metabolite(id='14dhncoa_c', compartment='c', name='1,4-Dihydroxy-2-naphthoyl-CoA')
 
     new_reaction3.add_metabolites({model.metabolites.get_by_id('sbzcoa_c'): -1,
-                                model.metabolites.get_by_id('h_c'): -1,
-                                dhncoa: 1,
-                                model.metabolites.get_by_id('h2o_c'): 1
-                                })
+                                   model.metabolites.get_by_id('h_c'): -1,
+                                   dhncoa: 1,
+                                   model.metabolites.get_by_id('h2o_c'): 1
+                                  })
 
     model.add_reactions([new_reaction3])
 
@@ -76,11 +84,11 @@ def model_update(model):
     new_reaction4.gene_reaction_rule = '( LLMG_1834 )'
 
     new_reaction4.add_metabolites({model.metabolites.get_by_id('h2o_c'): -1,
-                                model.metabolites.get_by_id('14dhncoa_c'): -1,
-                                model.metabolites.get_by_id('coa_c'): 1,
-                                model.metabolites.get_by_id('h_c'): 1,
-                                model.metabolites.get_by_id('dhna_c'): 1
-                                })
+                                   model.metabolites.get_by_id('14dhncoa_c'): -1,
+                                   model.metabolites.get_by_id('coa_c'): 1,
+                                   model.metabolites.get_by_id('h_c'): 1,
+                                   model.metabolites.get_by_id('dhna_c'): 1
+                                  })
 
     model.add_reactions([new_reaction4])
 
@@ -99,13 +107,13 @@ def model_update(model):
     dmmq7 = Metabolite(id='2dmmq7_c', compartment='c', name='2-Demethylmenaquinol-7')
 
     new_reaction5.add_metabolites({model.metabolites.get_by_id('dhna_c'): -1,
-                                model.metabolites.get_by_id('nad_c'): -1,
-                                model.metabolites.get_by_id('hepdp_c'): -1,
-                                model.metabolites.get_by_id('co2_c'): 1,
-                                model.metabolites.get_by_id('nadh_c'): 1,
-                                model.metabolites.get_by_id('ppi_c'): 1,
-                                dmmq7: 1
-                                })
+                                   model.metabolites.get_by_id('nad_c'): -1,
+                                   model.metabolites.get_by_id('hepdp_c'): -1,
+                                   model.metabolites.get_by_id('co2_c'): 1,
+                                   model.metabolites.get_by_id('nadh_c'): 1,
+                                   model.metabolites.get_by_id('ppi_c'): 1,
+                                   dmmq7: 1
+                                  })
 
     model.add_reactions([new_reaction5])
 
@@ -121,12 +129,12 @@ def model_update(model):
 
 
     new_reaction6.add_metabolites({model.metabolites.get_by_id('amet_c'): -1,
-                                model.metabolites.get_by_id('nadph_c'): -1,
-                                model.metabolites.get_by_id('2dmmq7_c'): -1,
-                                model.metabolites.get_by_id('ahcys_c'): 1,
-                                model.metabolites.get_by_id('nadp_c'): 1,
-                                model.metabolites.get_by_id('mql7_c'): 1
-                                })
+                                   model.metabolites.get_by_id('nadph_c'): -1,
+                                   model.metabolites.get_by_id('2dmmq7_c'): -1,
+                                   model.metabolites.get_by_id('ahcys_c'): 1,
+                                   model.metabolites.get_by_id('nadp_c'): 1,
+                                   model.metabolites.get_by_id('mql7_c'): 1
+                                  })
 
     model.add_reactions([new_reaction6])
 
@@ -139,10 +147,10 @@ def model_update(model):
     new_reaction7.name = 'Menaquinone:FAD oxidoreductase' 
 
     new_reaction7.add_metabolites({model.metabolites.get_by_id('mql7_c'): -1,
-                                model.metabolites.get_by_id('fad_c'): -1,
-                                model.metabolites.get_by_id('mqn7_c'): 1,
-                                model.metabolites.get_by_id('fadh2_c'): 1
-                                })
+                                   model.metabolites.get_by_id('fad_c'): -1,
+                                   model.metabolites.get_by_id('mqn7_c'): 1,
+                                   model.metabolites.get_by_id('fadh2_c'): 1
+                                  })
 
     model.add_reactions([new_reaction7])
 
@@ -154,12 +162,12 @@ def model_update(model):
     new_reaction8.name = 'Pyruvate:menaquinone oxidoreductase'
 
     new_reaction8.add_metabolites({model.metabolites.get_by_id('ac_c'): -1,
-                                model.metabolites.get_by_id('co2_c'): -1,
-                                model.metabolites.get_by_id('mql7_c'): -1,
-                                model.metabolites.get_by_id('h2o_c'): 1,
-                                model.metabolites.get_by_id('pyr_c'): 1,
-                                model.metabolites.get_by_id('mqn7_c'): 1
-                                })
+                                   model.metabolites.get_by_id('co2_c'): -1,
+                                   model.metabolites.get_by_id('mql7_c'): -1,
+                                   model.metabolites.get_by_id('h2o_c'): 1,
+                                   model.metabolites.get_by_id('pyr_c'): 1,
+                                   model.metabolites.get_by_id('mqn7_c'): 1
+                                  })
 
     model.add_reactions([new_reaction8])
 
@@ -172,19 +180,32 @@ def model_update(model):
     new_reaction9.name = '1,4-dihydroxy-2-naphthoate octaprenyltransferase'
 
     new_reaction9.add_metabolites({model.metabolites.get_by_id('amet_c'): -1,
-                                model.metabolites.get_by_id('2dmmq7_c'): -1,
-                                model.metabolites.get_by_id('ahcys_c'): 1,
-                                model.metabolites.get_by_id('h_c'): 1,
-                                model.metabolites.get_by_id('mqn7_c'): 1
-                                })
+                                   model.metabolites.get_by_id('2dmmq7_c'): -1,
+                                   model.metabolites.get_by_id('ahcys_c'): 1,
+                                   model.metabolites.get_by_id('h_c'): 1,
+                                   model.metabolites.get_by_id('mqn7_c'): 1
+                                  })
 
     model.add_reactions([new_reaction9])
 
-    #bounds cell for future use
     reaction_name = "MQNS"
     reaction = model.reactions.get_by_id(reaction_name)
-    new_lower_bound = 0.03
+    new_lower_bound = 0.0
     reaction.lower_bound = new_lower_bound
     model.reactions.MQNS.bounds
+    model.add_boundary(model.metabolites.mqn7_c, type='demand')
+    model.objective = model.reactions.DM_mqn7_c
+    
+    # change medium
+    medium = model.medium
+    original_medium = model.medium
+    medium['EX_tyr__L_e'] = 0
+    model.medium = medium
+    
+    model.medium = original_medium
+    
+    medium['EX_glu__L_e'] = 17.05
+    medium['EX_arg__L_e'] = 1
+    model.medium = medium
 
     return model
