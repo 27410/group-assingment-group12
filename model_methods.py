@@ -2,7 +2,7 @@ import cobra.io
 from cobra.io import read_sbml_model
 from cobra import Reaction, Metabolite
 
-def get_updated_model():
+def get_base_model():
     
     model = read_sbml_model('iNF517.xml')
     medium = model.medium
@@ -196,6 +196,10 @@ def get_updated_model():
     model.add_boundary(model.metabolites.mqn7_c, type='demand')
     model.objective = model.reactions.DM_mqn7_c
     
+    return model
+
+def update_medium(model):
+
     # change medium
     medium = model.medium
     original_medium = model.medium
@@ -209,3 +213,4 @@ def get_updated_model():
     model.medium = medium
 
     return model
+
