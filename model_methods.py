@@ -201,16 +201,10 @@ def get_base_model():
 def update_medium(model):
 
     # change medium
-    medium = model.medium
     original_medium = model.medium
-    medium['EX_tyr__L_e'] = 0
-    model.medium = medium
-    
+    original_medium['EX_glu__L_e'] = 16.05
+    original_medium['EX_sucr_e'] = 284
     model.medium = original_medium
-    
-    medium['EX_glu__L_e'] = 17.05
-    medium['EX_arg__L_e'] = 1
-    model.medium = medium
 
     return model
 
