@@ -16,5 +16,5 @@
 Describe the overall aim of your project and what you have achieved.
 
 ## Project overview
-Describe how your project is organized ...
+The project is organized by the numbered Junyper notebooks, beginning with 1. Memote to 6. Flux Variance Analysis. Furthermore, there are the important files model_methods.py and iNF517.xml that are the function where we get the updated model from the model validation and the initial model respectively. The "Report" Jupyter notebook is our main document, with all our findings, discussions and conclusions.
 
