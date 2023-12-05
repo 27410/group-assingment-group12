@@ -3,7 +3,7 @@
 
 # 27410 - Group assignment - Group 12 - Vitamin K2 production by Lactococcus lactis MG1363 (iNF517)
 
-## Project summary (<300 words)
+## Project summary
 The project aims to boost the production of Vitamin K2 (MK-7) using the Lactococcus lactis subsp. cremoris MG1363 strain, known as iNF517. Recognized for its natural production capacity of MK-7, enhancing this process is vital due to the current low yield, which is not economically or environmentally sustainable on a large scale.
 The approach includes several key steps:
 1. Model Validation: Validating the Lactococcus lactis strain's metabolic pathways for MK-7 synthesis is essential. This step involves confirming the accuracy of pathway annotations in the Genome-Scale Model (GSM) and correcting any discrepancies to ensure modifications and optimizations are well-informed.
@@ -15,5 +15,5 @@ The approach includes several key steps:
 In conclusion, by applying metabolic engineering techniques, the project has significantly advanced the production yield of Vitamin K2 in L. lactis. This has led to a better understanding of the potential areas for improvement, steering the process closer to being economically viable.
 
 ## Project overview
-The project is organized by the numbered Jupyter notebooks, beginning with 1. Memote with the resulting index.html to 7. OptKnock and OptGene. They are numbered in order corresponding to the chapters in the Report.ipynp Chapter 4. Computer-Aided Cell Factory Engineering. Furthermore, there are the important files model_methods.py and iNF517.xml which are the function where we get the updated model with implemented pathways and the GSM model respectively. The "Report" Jupyter notebook is our main document, with all our findings, discussions, and conclusions.
+The project is organized by the numbered Jupyter notebooks, beginning with 1. Memote with the resulting index.html to 9. dFBA. They are numbered in order corresponding to the chapters in the Report.ipynp Chapter 4. Computer-Aided Cell Factory Engineering. Furthermore, there are the important files model_methods.py and iNF517.xml which are the function where we get the updated model with implemented pathways and the GSM model respectively. The "Report" Jupyter notebook is our main document, with all our findings, discussions, and conclusions.
 
