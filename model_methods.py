@@ -212,6 +212,7 @@ def update_medium(model):
 def add_sucrose(model):
     original_medium = model.medium
     original_medium['EX_sucr_e'] = 284
+    model.medium = original_medium
     
     return model
     
