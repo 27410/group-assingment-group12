@@ -210,7 +210,7 @@ def update_medium(model):
     return model
 
 def add_sucrose(model):
-    
+    original_medium = model.medium
     original_medium['EX_sucr_e'] = 284
     
     return model
