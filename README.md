@@ -11,5 +11,5 @@
 Describe the overall aim of your project and what you have achieved.
 
 ## Project overview
-The project is organized by the numbered Jupyter notebooks, beginning with 1. Memote with the resulting index.html to 7. Phenotypic Phase Plane. Furthermore, there are the important files model_methods.py and iNF517.xml which are the function where we get the updated model with implemented pathways and the GSM model respectively. The "Report" Jupyter notebook is our main document, with all our findings, discussions, and conclusions.
+The project is organized by the numbered Jupyter notebooks, beginning with 1. Memote with the resulting index.html to 7. OptKnock and OptGene. They are numbered in order corresponding to the chapters in the Report.ipynp Chapter 4. Computer-Aided Cell Factory Engineering. Furthermore, there are the important files model_methods.py and iNF517.xml which are the function where we get the updated model with implemented pathways and the GSM model respectively. The "Report" Jupyter notebook is our main document, with all our findings, discussions, and conclusions.
 
