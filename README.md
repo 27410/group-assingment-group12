@@ -14,7 +14,8 @@ The approach includes several key steps:
 2. Media Optimization: The project seeks to optimize media composition, including carbon sources, amino acids, and co-factors necessary for the host organism's optimal performance, directly impacting MK-7 production levels.
 3. Minimizing Side Reactions: Evaluating and reducing side reactions is another strategy to direct more resources and metabolic activity towards MK-7 production, thus aiming to prevent the loss of yield.
 4. Gene knock out: Applying gene knock out strategies to find potential targets of gene deletions to improve the production of MK-7.
-5. Flux Variability Analysis: Employing flux variability analysis is crucial to identify and quantify the organism's metabolic flux range. This analysis helps identify bottlenecks and opportunities for metabolic engineering to further enhance MK-7 production, offering a more profound insight into the organism's metabolic abilities and constraints. <br>
+5. Flux Variability Analysis: Employing flux variability analysis is crucial to identify and quantify the organism's metabolic flux range. This analysis helps identify bottlenecks and opportunities for metabolic engineering to further enhance MK-7 production, offering a more profound insight into the organism's metabolic abilities and constraints. 
+<br>
 In conclusion, by applying metabolic engineering techniques, the project has significantly advanced the production yield of Vitamin K2 in L. lactis. This has led to a better understanding of the potential areas for improvement, steering the process closer to being economically viable.
 
 ## Project overview
